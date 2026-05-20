@@ -8,13 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3b82f6',
+        primary: '#d2103e',
+        navy: '#0d1b2a',
         dark: {
-          bg: '#0f172a',
-          card: '#1e293b',
-          text: '#e2e8f0'
-        }
-      }
+          bg: '#0d1117',
+          card: '#161b22',
+          border: '#21262d',
+          text: '#f0f6fc',
+        },
+      },
     },
   },
   plugins: [],
