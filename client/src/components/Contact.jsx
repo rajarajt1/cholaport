@@ -215,7 +215,7 @@ const Contact = () => {
 
             <div className="space-y-3">
               <a
-                href="mailto:raja@email.com"
+                href="mailto:rajarajasozhan13@gmail.com"
                 className="flex items-center gap-3 p-4 border border-[#30363d] rounded-xl hover:border-primary transition"
               >
                 <div className="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -225,7 +225,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-white font-medium text-sm">Email</div>
-                  <div className="text-gray-400 text-xs">raja@email.com</div>
+                  <div className="text-gray-400 text-xs">rajarajasozhan13@gmail.com</div>
                 </div>
               </a>
 

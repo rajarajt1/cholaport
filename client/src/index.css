@@ -29,3 +29,17 @@
     @apply bg-white dark:bg-dark-card border border-gray-100 dark:border-dark-border rounded-xl shadow-sm;
   }
 }
+
+@media print {
+  body > * { display: none !important; }
+  #resume-printable {
+    display: block !important;
+    position: fixed;
+    inset: 0;
+    background: white;
+    color: black;
+    padding: 2rem;
+    font-size: 13px;
+    overflow: auto;
+  }
+}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
 
-const Navbar = () => {
+const Navbar = ({ onResumeClick }) => {
   const { isDark, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
           <button onClick={() => scrollTo('home')} className="flex items-center gap-2.5">
             <span className="bg-primary text-white font-bold text-xs w-8 h-8 flex items-center justify-center rounded">
-              rrc
+              RC
             </span>
             <span className="font-bold text-navy dark:text-white text-sm hidden sm:block">
               RajaRajaChozhan
@@ -85,7 +85,7 @@ const Navbar = () => {
               )}
             </button>
             <button
-              onClick={() => scrollTo('contact')}
+              onClick={onResumeClick}
               className="flex items-center gap-1.5 border border-gray-300 dark:border-dark-border text-sm font-medium px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:border-primary hover:text-primary transition"
             >
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,6 +130,12 @@ const Navbar = () => {
             </button>
           ))}
           <div className="flex gap-2 pt-3 border-t border-gray-200 dark:border-dark-border">
+            <button
+              onClick={onResumeClick}
+              className="flex-1 border border-gray-300 dark:border-dark-border text-sm py-2 rounded-lg dark:text-gray-300"
+            >
+              Resume
+            </button>
             <button
               onClick={toggleTheme}
               className="flex-1 border border-gray-300 dark:border-dark-border text-sm py-2 rounded-lg dark:text-gray-300"

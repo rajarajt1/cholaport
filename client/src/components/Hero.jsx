@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero = ({ onResumeClick }) => {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -63,7 +63,7 @@ const Hero = () => {
               <button onClick={() => scrollTo('contact')} className="btn-outline">
                 Hire Me
               </button>
-              <button className="border border-gray-300 dark:border-dark-border text-gray-600 dark:text-gray-300 text-sm font-medium px-5 py-2.5 rounded-lg hover:border-primary hover:text-primary transition">
+              <button onClick={onResumeClick} className="border border-gray-300 dark:border-dark-border text-gray-600 dark:text-gray-300 text-sm font-medium px-5 py-2.5 rounded-lg hover:border-primary hover:text-primary transition">
                 View Resume
               </button>
             </div>
